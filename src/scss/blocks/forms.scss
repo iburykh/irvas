@@ -1,0 +1,48 @@
+.form {
+	padding: 40px 50px;
+	text-align: center;
+	border-radius: 1rem;
+	background-color: #ffffff;
+	text-align: center;
+	&__title {
+		font-size: 20px;
+		font-weight: 700;
+		color: #333333;
+		line-height: 1.5;
+		span {
+			font-size: 24px;
+			text-transform: uppercase;
+		}
+	}
+
+	&__input {
+		display: block;
+		width: 100%;
+		margin: 20px auto 0px auto;
+		height: 58px;
+		text-align: center;
+		border: 1px solid #ccc;
+		border-radius: 10px;
+		padding: 10px;
+		color: #555;
+		&:focus {
+			box-shadow: 0px 0px 10px #ffb400;
+			border: 1px solid #ffb400;
+		}
+		&.error {
+			box-shadow: 0px 0px 10px #f13c04;
+			border: 1px solid #f13c04;
+		}
+	}
+
+	&__btn {
+		display: block;
+		margin: 20px auto 0px auto;
+	}
+
+	&__text {
+		margin-top: 10px;
+		font-size: 11px;
+		color: #666;
+	}
+}

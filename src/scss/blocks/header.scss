@@ -1,0 +1,67 @@
+.header {
+	&__container {
+		min-height: 100px;
+		padding: 10px 0px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__logo {
+		width: 145px;
+		height: 100%;
+		img {
+			max-width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__text {
+		color: #0089cd;
+	}
+
+	&__btn {
+		background: url('../img/header/edit.png') 10% center no-repeat;
+		background-color: transparent;
+		border: 2px solid #55a831;
+		border-radius: 10px;
+		padding: 10px 10px 10px 50px;
+		font-weight: 700;
+		color: #55a831;
+		text-transform: uppercase;
+		text-align: left;
+		transition: all 0.3s ease 0s;
+		@media (min-width: 992px) {
+			&:hover {
+				box-shadow: 0px 0px 5px #55a831;
+			}
+		}
+	}
+
+	&__working {
+		background: url('../img/header/clock.png') 10% center no-repeat;
+		padding-left: 60px;
+		span {
+			display: block;
+			font-weight: 700;
+			font-size: 18px;
+		}
+	}
+
+	&__phone {
+		background: url('../img/header/phone.png') 10% center no-repeat;
+		padding-left: 50px;
+		font-size: 23px;
+		font-weight: 700;
+	}
+
+	&__link {
+		color: #000;
+		transition: all 0.3s ease 0s;
+		@media (min-width: 992px) {
+			&:hover {
+				color: #0089cd;
+			}
+		}
+	}
+}

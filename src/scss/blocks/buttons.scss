@@ -1,0 +1,16 @@
+.btn {
+	padding: 25px;
+	font-size: 17px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 1px solid #ffc600;
+	border-radius: 10px;
+	background-color: #ffed26;
+	background: linear-gradient(180deg, #ffed26 0%, #ffb400 100%);
+	transition: all 0.3s ease 0s;
+	@media (min-width: 992px) {
+		&:hover {
+			box-shadow: 0px 0px 10px rgba(255, 153, 0, 0.6);
+		}
+	}
+}
