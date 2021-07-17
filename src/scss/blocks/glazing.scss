@@ -1,0 +1,67 @@
+.glazing {
+	padding: 80px 0px;
+	@media (max-width: 768px) {
+		padding: 50px 0px;
+	}
+	@media (max-width: 576px) {
+		padding: 30px 0px;
+	}
+}
+.glazing-slider {
+	width: 100%;
+	margin-top: 20px;
+	&__wrapper {
+	}
+	&__prev, &__next {
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		z-index: 100;
+		top: 50%;
+		transform: translateY(-50%);
+		background-color: transparent;
+		border: none;
+		display: none;
+		@media (max-width: 992px) {
+			display: block;
+		}
+	}
+	&__prev {
+		background: url('../../img/glazing/left_arrow.png') center center/70% no-repeat;
+		left: 0;
+	}
+
+	&__next {
+		background: url('../../img/glazing/right_arrow.png') center center/70% no-repeat;
+		right: 0;
+	}
+}
+.slider-item {
+	text-align: center;
+	&_link {
+		font-size: 18px;
+		font-weight: 700;
+		color: #337ab7;
+		margin-top: 20px;
+		display: inline-block;
+		outline: none;
+		&:focus {
+			text-decoration: underline;
+		}
+		@media (min-width: 992px) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__img {
+		width: 100px;
+		height: 100px;
+		margin: 0px auto;
+		img {
+			max-width: 100%;
+			object-fit: cover;
+		}
+	}
+}

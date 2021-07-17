@@ -20,12 +20,16 @@
 					<img src="img/header/logo.png" alt="logo">
 				</picture>
 			</a>
-			<p class="header__text">Oстекление балконов и лоджий в Москве<br>и Московской области</p>
-			<button class="header__btn">
-				Вызвать<br>замерщика
-			</button>
+			<p class="header__text">Oстекление балконов и лоджий в Москве и Московской области</p>
+			<div class="header__call">
+				<button class="header__btn">
+					Вызвать<br>замерщика
+				</button>
+			</div>
 			<div class="header__working">
-				без выходных <span>9:00 - 18:00</span>
+				<div class="header__time">
+					без выходных <span>9:00 - 18:00</span>
+				</div>
 			</div>
 			<div class="header__phone">
 				<a href="tel:+74956466171" class="header__link">+7 (495) 646-61-71</a>
@@ -54,11 +58,67 @@
 			</div>
 			<form class="main__form form">
 				<h2 class="form__title">Запишитесь сегодня на<br><span>бесплатный замер</span></h2>
-				<input id="name" name="name" placeholder="Введите ваше имя" type="text" class="form__input req">
-				<input id="phone" name="phone" placeholder="Введите телефон" type="text" class="form__input req tel">
+				<input id="name" name="name" autocomplete="off" placeholder="Введите ваше имя" type="text" class="form__input req">
+				<input id="phone" name="phone" autocomplete="off" placeholder="Введите телефон" type="text" class="form__input req tel">
 				<button class="form__btn btn">Вызвать замерщика!</button>
 				<p class="form__text">Ваши данные конфиденциальны</p>	
 			</form>	
+		</div>
+	</section>
+	<section class="glazing">
+		<div class="glazing__container container">
+			<h2 class="glazing__title title">Остекление балконов и лоджий</h2>
+			<div class="glazing-slider swiper-container">
+				<div class="glazing-slider__wrapper swiper-wrapper">
+					<div class="slider-item swiper-slide">
+						<div class="slider-item__img">
+							<picture>
+								<source srcset="img/glazing/icons/1.webp" type="image/webp">
+								<img src="img/glazing/icons/1.png" loading="lazy" alt="Деревянное остекление">
+							</picture>
+						</div>
+						<a href="#" class="slider-item_link">Деревянное<br>остекление</a>
+					</div>
+					<div class="slider-item swiper-slide">
+						<div class="slider-item__img">
+							<picture>
+								<source srcset="img/glazing/icons/2.webp" type="image/webp">
+								<img src="img/glazing/icons/2.png" loading="lazy" alt="Алюминиевое остекление">
+							</picture>
+						</div>
+						<a href="#" class="slider-item_link">Алюминиевое<br>остекление</a>
+					</div>
+					<div class="slider-item swiper-slide">
+						<div class="slider-item__img">
+							<picture>
+								<source srcset="img/glazing/icons/3.webp" type="image/webp">
+								<img src="img/glazing/icons/3.png" loading="lazy" alt="Остекление пластиковыми рамами">
+							</picture>
+						</div>
+						<a href="#" class="slider-item_link">Остекление<br>пластиковыми<br>рамами</a>
+					</div>
+					<div class="slider-item swiper-slide">
+						<div class="slider-item__img">
+							<picture>
+								<source srcset="img/glazing/icons/4.webp" type="image/webp">
+								<img src="img/glazing/icons/4.png" loading="lazy" alt="Французское остекление">
+							</picture>
+						</div>
+						<a href="#" class="slider-item_link">Французское<br>остекление<br>(панорамное)</a>
+					</div>
+					<div class="slider-item swiper-slide">
+						<div class="slider-item__img">
+							<picture>
+								<source srcset="img/glazing/icons/5.webp" type="image/webp">
+								<img src="img/glazing/icons/5.png" loading="lazy" alt="Остекление с выносом">
+							</picture>
+						</div>
+						<a href="#" class="slider-item_link">Остекление<br>с выносом</a>
+					</div>
+				</div>
+				<button class="glazing-slider__prev prev" aria-label="предыдущий слайд"></button>
+				<button class="glazing-slider__next next" aria-label="следующий слайд"></button>
+			</div>
 		</div>
 	</section>
 

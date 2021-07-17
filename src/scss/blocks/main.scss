@@ -1,21 +1,61 @@
 .main {
-	background: url('../../img/main/bg.png') center center/cover no-repeat;
+	background: url('../img/main/bg.png') center center/cover no-repeat;
+	@media (max-width: 1200px) {
+		background: url('../img/main/bg_min.png') center center/cover no-repeat;
+		
+	}
 	&__container {
 		height: 100%;
 		padding: 100px 0px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@media (max-width: 1200px) {
+			padding: 100px 20px;
+			justify-content: space-around;
+		}
+		@media (max-width: 992px) {
+			flex-wrap: wrap;
+			padding: 30px 20px;
+		}
+		@media (max-width: 576px) {
+			padding: 20px 10px;
+		}
 	}
+	&__promo {
+		@media (max-width: 992px) {
+			margin: 0px 20px 30px 20px;
+		}
 
+	}
 	&__title, &__price {
 		font-size: 26px;
 		font-weight: 700;
 		color: #333;
+		@media (max-width: 1200px) {
+			text-align: center;
+		}
+	}
+	&__title {
+		@media (max-width: 1200px) {
+			font-size: 30px;
+		}
+		@media (max-width: 768px) {
+			font-size: 26px;
+		}
+		@media (max-width: 576px) {
+			font-size: 20px;
+		}
 	}
 
 	&__price {
 		font-size: 55px;
+		@media (max-width: 768px) {
+			font-size: 40px;
+		}
+		@media (max-width: 576px) {
+			font-size: 25px;
+		}
 	}
 
 	&__features {
@@ -23,6 +63,21 @@
 		display: flex;
 		justify-content: start;
 		align-items: center;
+		@media (max-width: 1200px) {
+			margin-top: 50px;
+			justify-content: center;
+		}
+		@media (max-width: 992px) {
+			margin-top: 30px;
+		}
+		@media (max-width: 768px) {
+			margin-top: 20px;
+		}
+		@media (max-width: 576px) {
+			flex-wrap: wrap;
+			// justify-content: space-around;
+			
+		}
 	}
 
 	&__item {
@@ -37,6 +92,19 @@
 		padding-top: 80px;
 		&:last-child {
 			margin-right: 0;
+		}
+		@media (max-width: 768px) {
+			margin-right: 20px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		@media (max-width: 576px) {
+			// margin-right: 0;
+			margin: 0px 10px;
+			&:last-child {
+				margin-right: 10px;
+			}
 		}
 		&_1 {
 			background: url('../../img/main/icons/main_1.png') center 100%/contain no-repeat;

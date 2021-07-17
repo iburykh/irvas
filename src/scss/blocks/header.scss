@@ -5,6 +5,18 @@
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		@media (max-width: 1200px) {
+			justify-content: space-between;
+			padding: 10px 20px;
+		}
+		@media (max-width: 992px) {
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 20px 20px;	
+		}
+		@media (max-width: 576px) {
+			padding: 15px 10px;	
+		}
 	}
 
 	&__logo {
@@ -13,11 +25,50 @@
 		img {
 			max-width: 100%;
 			object-fit: cover;
+			@media (max-width: 576px) {
+				max-width: 30%;
+			}
+		}
+		@media (max-width: 992px) {
+			flex: 0 1 20%;
+			text-align: right;
+		}
+		@media (max-width: 768px) {
+			flex: 0 1 100%;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		@media (max-width: 576px) {
+			margin-bottom: 5px;
 		}
 	}
 
 	&__text {
+		max-width: 290px;
+		margin: 0px 10px;
 		color: #0089cd;
+		@media (max-width: 1200px) {
+			text-align: center;
+		}
+		@media (max-width: 992px) {
+			flex: 0 1 50%;
+			max-width: 80%;
+		}
+		@media (max-width: 576px) {
+			flex: 0 1 100%;
+			max-width: 100%;
+		}
+	}
+	&__call {
+		@media (max-width: 992px) {
+			flex: 0 1 20%;
+		}
+		@media (max-width: 768px) {
+			flex: 0 1 100%;
+			text-align: center;
+			margin: 10px 0px;
+		}
+
 	}
 
 	&__btn {
@@ -36,32 +87,67 @@
 				box-shadow: 0px 0px 5px #55a831;
 			}
 		}
+		@media (max-width: 576px) {
+			padding: 5px 5px 5px 50px;
+			font-size: 12px;
+		}
+	}
+	&__working {
+		@media (max-width: 576px) {
+			flex: 0 1 100%;
+			text-align: center;
+		}
 	}
 
-	&__working {
-		background: url('../img/header/clock.png') 10% center no-repeat;
-		padding-left: 60px;
+	&__time {
+		min-width: 158px;
+		background: url('../img/header/clock.png') 0% center no-repeat;
+		padding-left: 45px;
+		margin: 0px 10px;
 		span {
 			display: block;
 			font-weight: 700;
 			font-size: 18px;
+			@media (max-width: 1200px) {
+				font-size: 15px;
+			}
+			@media (max-width: 576px) {
+				font-size: 14px;
+			}
+		}
+		@media (max-width: 1200px) {
+			padding-left: 40px;
+			min-width: 150px;
+		}
+		@media (max-width: 576px) {
+			width: 120px;
+			margin: 0px auto;
+			padding-left: 25px;
 		}
 	}
-
-	&__phone {
-		background: url('../img/header/phone.png') 10% center no-repeat;
-		padding-left: 50px;
+	&__link {
+		display: block;
+		background: url('../img/header/phone.png') 0% center/contain no-repeat;
+		padding-left: 40px;
 		font-size: 23px;
 		font-weight: 700;
-	}
-
-	&__link {
 		color: #000;
-		transition: all 0.3s ease 0s;
+		outline: none;
+		&:focus {
+			text-decoration: underline;
+		}
 		@media (min-width: 992px) {
 			&:hover {
-				color: #0089cd;
+				text-decoration: underline;
 			}
+		}
+		@media (max-width: 1200px) {
+			font-size: 16px;
+			padding-left: 25px;
+		}
+		@media (max-width: 576px) {
+			margin-top: 10px;
+			font-size: 14px;
 		}
 	}
 }
