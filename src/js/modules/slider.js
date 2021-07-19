@@ -18,9 +18,6 @@ const slider = () => {
 			500: {
 				slidesPerView: 3,
 			},
-			370: {
-				slidesPerView: 2,
-			},
 		},
 
 		navigation: {
@@ -32,8 +29,7 @@ const slider = () => {
 		grabCursor: true,
 		slidesPerGroup: 1,
 		initialSlide: 0,
-		slidesPerView: 1,
-		loop: true,
+		slidesPerView: 2,
 		speed: 800,
 	});
 };

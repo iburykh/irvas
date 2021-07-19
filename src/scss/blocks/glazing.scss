@@ -10,8 +10,7 @@
 .glazing-slider {
 	width: 100%;
 	margin-top: 20px;
-	&__wrapper {
-	}
+	padding: 10px 0px;
 	&__prev, &__next {
 		width: 20px;
 		height: 20px;
@@ -45,7 +44,7 @@
 		margin-top: 20px;
 		display: inline-block;
 		outline: none;
-		&:focus {
+		&.active {
 			text-decoration: underline;
 		}
 		@media (min-width: 992px) {
@@ -65,3 +64,148 @@
 		}
 	}
 }
+
+//content
+
+.glazing-wrapper {
+	margin-top: 40px;
+	justify-content: center;
+	align-items: stretch;
+	display: none;
+	&.active {
+		display: flex;
+	}
+	@media (max-width: 768px) {
+		flex-wrap: wrap;
+	}
+}
+.content-item {
+	flex: 0 1 50%;
+	text-align: center;
+	padding: 50px 60px;
+	display: flex;
+	flex-direction: column;
+	@media (max-width: 1200px) {
+		padding: 50px;
+	}
+	@media (max-width: 992px) {
+		padding: 40px;
+	}
+	@media (max-width: 768px) {
+		flex: 0 1 80%;
+	}
+	@media (max-width: 576px) {
+		flex: 0 1 100%;
+		padding: 20px;
+	}
+
+		&_cold {
+			border-bottom-left-radius: 5px;
+			border-top-left-radius: 5px;
+			border-top: 5px solid #0089cd;
+			background-color: #c7dce9;
+			background: linear-gradient(180deg, #c7dce9 0%, #c7dce9 0%, rgba(255, 255, 255, 0) 100%);
+			.content-item__title {
+				color: #0089cd;
+			}
+			@media (max-width: 768px) {
+				border-bottom-left-radius: 0;
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+			}
+
+		}
+
+		&_warm {
+			border-bottom-right-radius: 5px;
+			border-top-right-radius: 5px;
+			border-top: 5px solid #ffb903;
+			background-color: #f7eac9;
+			background: linear-gradient(180deg, #f7eac9 0%, #f7eac9 0%, rgba(255, 255, 255, 0) 100%);
+			.content-item__title {
+				color: #ffb903;
+			}
+			&.border {
+				border-radius: 5px;
+			}
+			@media (max-width: 768px) {
+				border-bottom-left-radius: 5px;
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 5px;
+			}
+		}
+
+		&__title {
+			font-size: 20px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		&__img {
+			margin-top: 25px;
+			position: relative;
+			padding: 0px 0px 64% 0px;
+			img {
+				object-fit: cover;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+			}
+		}
+
+		&__list {
+			margin-top: 37px;
+			text-align: left;
+			flex: 1 1 auto;
+		}
+
+		&__cost {
+			margin-top: 25px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			@media (max-width: 1200px) {
+				flex-wrap: wrap;
+			}
+		}
+
+		&__item {
+			margin-bottom: 15px;
+			padding-left: 40px;
+			position: relative;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			&::before {
+				content:'';
+				background: url(../img/glazing/check.png) center/cover no-repeat;
+				width: 25px;
+				height: 25px;
+				position: absolute;
+				left: 0;
+				top: -5px;	
+			}	
+		}
+
+		&__price {
+			display: inline-block;
+			max-width: 157px;
+			text-align: left;
+			line-height: 1.7;
+			margin-right: 30px;
+			span {
+				font-size: 20px;
+				font-weight: 700;
+
+			}
+		}
+
+		&__btn {
+			@media (max-width: 1200px) {
+				margin-top: 20px;
+			}
+		}
+}
+

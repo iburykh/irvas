@@ -2,73 +2,14 @@
 @import 'base/mixins.scss';
 @import 'base/fonts.scss';
 @import 'base/normalize.scss';
+@import 'base/base.scss';
+@import 'base/container.scss';
+@import 'base/animation.scss';
 
+//============libs============
 @import '../../node_modules/swiper/swiper-bundle.css';
 
-$maxWidthContainer: 1170;
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'OpenSans', sans-serif;
-    color: #000;
-    background-color: #fff;
-    font-weight: 400;
-    font-size: 14px;
-    &.scroll-lock {
-        overflow: hidden;
-    }
-}
-
-ul, ol, li {
-	list-style-type: none;
-}
-
-a {
-	text-decoration: none;
-}
-
-button {
-    cursor: pointer;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-    outline: none;
-}
-textarea {
-	resize: none;
-}
-
-.container {
-    width: $maxWidthContainer + px;
-    margin: 0 auto;
-    @media (max-width: 1200px) {
-        // max-width: 960px;
-        width: 100%;
-        padding: 0 20px;
-    }
-    // @media (max-width: 992px) {
-    //     max-width: 720px;
-    // }
-    // @media (max-width: 768px) {
-    //     max-width: 540px;
-    // }
-    @media (max-width: 576px) {
-        // width: 100%;
-        padding: 0 10px;
-    }
-}
-
+//============blocks==========
 @import 'blocks/header.scss';
 @import 'blocks/main.scss';
 @import 'blocks/forms.scss';

@@ -10,7 +10,7 @@
 	transition: all 0.3s ease 0s;
 	@media (min-width: 992px) {
 		&:hover {
-			color: #fff;
+			box-shadow: 1px 2px 20px 0px rgba(255, 153, 0, 0.4);
 		}
 	}
 	@media (max-width: 576px) {

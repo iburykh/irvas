@@ -132,10 +132,6 @@
 		font-size: 23px;
 		font-weight: 700;
 		color: #000;
-		outline: none;
-		&:focus {
-			text-decoration: underline;
-		}
 		@media (min-width: 992px) {
 			&:hover {
 				text-decoration: underline;
