@@ -1,0 +1,51 @@
+.payment {
+	padding: 60px 0px;
+	@media (max-width: 576px) {
+		padding: 40px 0px;
+	}
+
+	&__title {
+		font-size: 30px;
+		font-weight: 700;
+		text-align: center;
+		@media (max-width: 768px) {
+			font-size: 20px;
+		}
+	}
+
+	&__wrapper {
+		margin-top: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@media (max-width: 992px) {
+			justify-content: space-around;
+			margin-top: 40px;
+		}
+		@media (max-width: 768px) {
+			justify-content: center;
+			margin-top: 20px;
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		margin: 20px 20px;
+		@media (max-width: 992px) {
+			flex: 0 1 40%;
+		}
+		@media (max-width: 576px) {
+			flex: 0 1 100%;
+		}
+	}
+
+	&__image {
+		margin-right: 20px;
+	}
+
+	&__text {
+		font-size: 20px;
+	}
+}

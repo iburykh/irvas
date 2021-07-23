@@ -7,10 +7,10 @@ const slider = () => {
 	const mainSlider = new Swiper('.glazing-slider', {
 
 		breakpoints: {
-			// 993: {
-			// 	watchOverflow: true,
-			// 	slidesPerView: 5,
-			// },
+			993: {
+				watchOverflow: true,
+				slidesPerView: 5,
+			},
 			769: {
 				slidesPerView: 4,
 			},
