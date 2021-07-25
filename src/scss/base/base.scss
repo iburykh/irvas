@@ -45,6 +45,7 @@ textarea {
 }
 
 a:focus,
-button:focus {
+button:focus,
+select:focus {
     outline: 2px dotted #0089cd;
 }
