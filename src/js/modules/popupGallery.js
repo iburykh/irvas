@@ -39,9 +39,6 @@ const popupGallery = () => {
 					let img = item.querySelector('img').getAttribute('src');
 					let webpMin = webp.substring(14); //  обрезаются 14 знаков от начала строки (1.webp)
 					let imgMin = img.substring(14);
-
-                    // добавляем блок с картинкой и папкой с большими картинками и подставляем то же значение как и 
-                    // в блоке с маленькими картинками
 					popupImg.innerHTML = `
 					<picture>
 						<source srcset="img/our_works/big_img/${webpMin}" type="image/webp">

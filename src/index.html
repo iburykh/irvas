@@ -940,25 +940,25 @@
 				<div class="popup-calc__image fade tabs-block active">
 					<picture>
 						<source srcset="img/modal_calc/balkon/type1.webp" type="image/webp">
-						<img src="img/modal_calc/balkon/type1.png" loading="lazy" alt="">
+						<img src="img/modal_calc/balkon/type1.png" alt="форма остекления балкона">
 					</picture>
 				</div>
 				<div class="popup-calc__image fade tabs-block">
 					<picture>
 						<source srcset="img/modal_calc/balkon/type2.webp" type="image/webp">
-						<img src="img/modal_calc/balkon/type2.png" loading="lazy" alt="">
+						<img src="img/modal_calc/balkon/type2.png" alt="форма остекления балкона">
 					</picture>
 				</div>
 				<div class="popup-calc__image fade tabs-block">
 					<picture>
 						<source srcset="img/modal_calc/balkon/type3.webp" type="image/webp">
-						<img src="img/modal_calc/balkon/type3.png" loading="lazy" alt="">
+						<img src="img/modal_calc/balkon/type3.png" alt="форма остекления балкона">
 					</picture>
 				</div>
 				<div class="popup-calc__image fade tabs-block">
 					<picture>
 						<source srcset="img/modal_calc/balkon/type4.webp" type="image/webp">
-						<img src="img/modal_calc/balkon/type4.png" loading="lazy" alt="">
+						<img src="img/modal_calc/balkon/type4.png" alt="форма остекления балкона">
 					</picture>
 				</div>
 			</div>
@@ -969,7 +969,7 @@
 				<input data-input class="popup-calc__input" id="height" type="text" placeholder="Высота" required>
                 <label for="height">мм</label>
 			</div>
-			<button class="popup-calc__btn btn">Далее</button>
+			<button class="popup-calc__btn btn" data-btn = "one">Далее</button>
 		</div>
 	</div>
 
@@ -1007,13 +1007,13 @@
 				<input data-check class="popup-calc-profile__checkbox" id="warm" type="radio" name="checkbox-test">
 				<label for="warm" class="popup-calc-profile__label warm"><span>Теплое</span></label>
 			</div>
-			<button class="popup-calc__btn btn">Далее</button>
+			<button class="popup-calc__btn btn" data-btn = "two">Далее</button>
 		</div>
 	</div>
 	<div class="popup-form" data-modal tabindex="-1">
 		<div class="popup-form__content" role="dialog">
 			<button class="popup__close" aria-label="закрыть диалоговое окно">&times;</button>
-			<form action="#" class="popup-form__form form">
+			<form action="#" class="popup-form__form form" data-calc = "end">
 				<h2 class="form__title">Спасибо за обращение! <br>Оставьте свои данные</h2>
 				<input name="name" autocomplete="off" placeholder="Введите ваше имя" type="text" class="form__input req">
 				<input name="phone" autocomplete="off" placeholder="Введите телефон" type="text" class="form__input req tel">

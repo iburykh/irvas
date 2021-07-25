@@ -1,4 +1,4 @@
-const form = () => {
+const form = (state) => {
 	const forms = document.querySelectorAll('form');
 	const inputs = document.querySelectorAll('input');
 
@@ -27,23 +27,16 @@ const form = () => {
 				if (error === 0) {
 					//=========FormData=====================================
 					const formData = new FormData(item);
-					// formData.append('image', formImage.files[0]);
-					//Добавить данные к отправке из других окон (не формы)
-					// if (item.getAttribute('data-calc') === "end") { 
-					// 	let val = costBlock.innerHTML;
-					// 	let obj = {
-					// 		cost: val
-					// 	};
-					// 	console.log(obj);
-					// 	for (let key in obj) {
-					// 		formData.append(key, obj[key]);
-					// 	}
-					// }
+					if (item.getAttribute('data-calc') === "end") {
+						for (let key in state) {
+							formData.append(key, state[key]);
+						}
+					}
 					//======================================================
 					postData('../server.php', formData)
-					.then(res => {
-						console.log(res); //!убрать
-					})
+					// .then(res => {
+					// 	console.log(res);
+					// })
 					.finally(() => {
 						clearInputs();
 					});

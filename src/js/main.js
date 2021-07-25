@@ -6,12 +6,16 @@ import slider from './modules/slider';
 import tabs from './modules/tabs';
 import timer from './modules/timer';
 import popupGallery from './modules/popupGallery';
+import changeModalState from './modules/changeModalState';
 
 'use strict';
 
-form();
+let modalState = {};
+
+form(modalState);
 mask();
 slider();
 tabs();
 timer();
 popupGallery();
+changeModalState(modalState);
