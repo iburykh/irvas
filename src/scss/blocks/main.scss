@@ -2,7 +2,6 @@
 	background: url('../img/main/bg.png') center center/cover no-repeat;
 	@media (max-width: 1200px) {
 		background: url('../img/main/bg_min.png') center center/cover no-repeat;
-		
 	}
 	&__container {
 		height: 100%;
@@ -74,9 +73,7 @@
 			margin-top: 20px;
 		}
 		@media (max-width: 576px) {
-			flex-wrap: wrap;
-			// justify-content: space-around;
-			
+			flex-wrap: wrap;		
 		}
 	}
 
@@ -107,19 +104,19 @@
 			}
 		}
 		&_1 {
-			background: url('../../img/main/icons/main_1.png') center 100%/contain no-repeat;
+			background: url('../img/main/icons/main_1.png') center 100%/contain no-repeat;
 		}
 
 		&_2 {
-			background: url('../../img/main/icons/main_2.png') center 100%/contain no-repeat;
+			background: url('../img/main/icons/main_2.png') center 100%/contain no-repeat;
 		}
 
 		&_3 {
-			background: url('../../img/main/icons/main_3.png') center 100%/contain no-repeat;
+			background: url('../img/main/icons/main_3.png') center 100%/contain no-repeat;
 		}
 
 		&_4 {
-			background: url('../../img/main/icons/main_4.png') center 100%/contain no-repeat;
+			background: url('../img/main/icons/main_4.png') center 100%/contain no-repeat;
 		}
 	}
 }

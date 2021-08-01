@@ -7,6 +7,7 @@ import tabs from './modules/tabs';
 import timer from './modules/timer';
 import popupGallery from './modules/popupGallery';
 import changeModalState from './modules/changeModalState';
+import lazyLoadMap from './modules/lazyLoadMap';
 
 'use strict';
 
@@ -19,3 +20,4 @@ tabs();
 timer();
 popupGallery();
 changeModalState(modalState);
+lazyLoadMap();

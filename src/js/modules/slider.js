@@ -1,7 +1,6 @@
 import Swiper from 'swiper';
 import SwiperCore, { Navigation, Pagination } from 'swiper/core';
 SwiperCore.use([Navigation, Pagination]);
-// import Swiper from 'swiper/bundle'; (подключение со всеми свойствами)
 
 const slider = () => {
 	const mainSlider = new Swiper('.glazing-slider', {
@@ -20,8 +19,8 @@ const slider = () => {
 		},
 
 		navigation: {
-			nextEl: '.glazing-slider__prev',
-			prevEl: '.glazing-slider__next',
+			nextEl: '.glazing-slider__next',
+			prevEl: '.glazing-slider__prev',
 		},
 
 

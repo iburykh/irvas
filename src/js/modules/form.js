@@ -34,9 +34,6 @@ const form = (state) => {
 					}
 					//======================================================
 					postData('../server.php', formData)
-					// .then(res => {
-					// 	console.log(res);
-					// })
 					.finally(() => {
 						clearInputs();
 					});

@@ -1,12 +1,3 @@
-// triggerSelector - кнопка открытия модального окна
-// modalSelector - модальное окно, которое открывается при нажатии на кнопку
-// closeSelector - крестик, закрывающий окно
-// time (в функции showModalByTime) - время, через которое появится окно
-// data-modal - добавить всем модальным окнам (если их несколько)
-// lock - добавить этот класс для блоков с position: absolute или fixed (добавится padding)
-// small - добавить этот класс для маленьких блоков с position: absolute или fixed (добавится margin)
-// gallery=false - атрибут true для окна с галереей
-
 const popupGallery = () => {
     function bindModal(triggerSelector, modalSelector, closeSelector, gallery=false) {
         const trigger = document.querySelectorAll(triggerSelector),
@@ -37,7 +28,7 @@ const popupGallery = () => {
 				if (gallery) {
 					let webp = item.querySelector('source').getAttribute('srcset');
 					let img = item.querySelector('img').getAttribute('src');
-					let webpMin = webp.substring(14); //  обрезаются 14 знаков от начала строки (1.webp)
+					let webpMin = webp.substring(14);
 					let imgMin = img.substring(14);
 					popupImg.innerHTML = `
 					<picture>
@@ -66,11 +57,11 @@ const popupGallery = () => {
             document.body.style.paddingRight = `0px`;
 
             modal.setAttribute('tabindex', '-1');
-            lastFocus.focus();
         }
 
         close.addEventListener('click', () => {
             popapClose();
+            lastFocus.focus();
         });
 
         modal.addEventListener('click', (e) => {
@@ -79,7 +70,6 @@ const popupGallery = () => {
             }
         });
 
-        // вложенные блоки в модальном окне
         wrapper.addEventListener('click', (e) => {
             if (e.target == wrapper) {
                 popapClose(); 
@@ -96,6 +86,7 @@ const popupGallery = () => {
         document.addEventListener('keydown', (e) => {
             if (e.code === 'Escape' && modalOpen) {
                 popapClose();
+                lastFocus.focus();
             }
         });
   

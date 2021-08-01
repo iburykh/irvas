@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	<header id="up" class="header">
+	<header class="header">
 		<div class="header__container container">
 			<a href="#" class="header__logo" aria-label="логотип">
 				<picture>
@@ -777,7 +777,7 @@
 	</section>
 	<section class="payment">
 		<div class="payment__container container">
-			<div class="payment__title">Вы можете оплатить наши услуги:</div>
+			<h2 class="payment__title">Вы можете оплатить наши услуги:</h2>
 			<div class="payment__wrapper">
 				<div class="payment__item">
 					<div class="payment__image">
@@ -862,7 +862,9 @@
 			<h2 class="footer__title title">Как нас найти</h2>
 			<div class="footer__wrapper">
 							
-			<iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2235.2618174047184!2d37.602909316080805!3d55.92749898597191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53a0ac32d875f%3A0xe1064c1e68c2b74a!2z0JLRi9GB0YLQsNCy0L7Rh9C90LDRjywgNTMsINCS0LXRiNC60LgsINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDEyNzU0Mw!5e0!3m2!1sru!2sru!4v1510535523155" width="550" height="450" style="border:0" allowfullscreen></iframe>
+			<div class="footer__map load-map" data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2235.2618174047184!2d37.602909316080805!3d55.92749898597191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53a0ac32d875f%3A0xe1064c1e68c2b74a!2z0JLRi9GB0YLQsNCy0L7Rh9C90LDRjywgNTMsINCS0LXRiNC60LgsINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDEyNzU0Mw!5e0!3m2!1sru!2sru!4v1510535523155">
+			</div>
+
 			<div class="footer__contacts">
 				<h3 class="footer__subtitle">Юридический адрес:</h3>
 				<address class="footer__text">
@@ -896,118 +898,121 @@
 		</div>
 	</div>
 	<div class="popup-calc" data-modal tabindex="-1">
-		<div class="popup-calc__content tabs" role="dialog">
-			<button class="popup-calc__close" aria-label="закрыть диалоговое окно">&times;</button>
-			<div class="popup-calc__title">Калькулятор</div>
-			<div class="popup-calc__subtitle">
-				Выберите форму балкона <br>и укажите размеры
+		<div class="popup-calc__wrapper">
+			<div class="popup-calc__content tabs" role="dialog">
+				<button class="popup-calc__close" aria-label="закрыть диалоговое окно">&times;</button>
+				<div class="popup-calc__title">Калькулятор</div>
+				<div class="popup-calc__subtitle">
+					Выберите форму балкона <br>и укажите размеры
+				</div>
+				<ul class="popup-calc__nav">
+					<li>
+						<a href="#" class="popup-calc__item tabs-item active">
+							<picture>
+								<source srcset="img/modal_calc/balkon/ba_01.webp" type="image/webp">
+								<img src="img/modal_calc/balkon/ba_01.png" loading="lazy" alt="">
+							</picture>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="popup-calc__item tabs-item">
+							<picture>
+								<source srcset="img/modal_calc/balkon/ba_02.webp" type="image/webp">
+								<img src="img/modal_calc/balkon/ba_02.png" loading="lazy" alt="">
+							</picture>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="popup-calc__item tabs-item">
+							<picture>
+								<source srcset="img/modal_calc/balkon/ba_03.webp" type="image/webp">
+								<img src="img/modal_calc/balkon/ba_03.png" loading="lazy" alt="">
+							</picture>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="popup-calc__item tabs-item">
+							<picture>
+								<source srcset="img/modal_calc/balkon/ba_04.webp" type="image/webp">
+								<img src="img/modal_calc/balkon/ba_04.png" loading="lazy" alt="">
+							</picture>
+						</a>
+					</li>
+				</ul>
+				<div class="popup-calc__wrapper">
+					<div class="popup-calc__image fade tabs-block active">
+						<picture>
+							<source srcset="img/modal_calc/balkon/type1.webp" type="image/webp">
+							<img src="img/modal_calc/balkon/type1.png" alt="форма остекления балкона">
+						</picture>
+					</div>
+					<div class="popup-calc__image fade tabs-block">
+						<picture>
+							<source srcset="img/modal_calc/balkon/type2.webp" type="image/webp">
+							<img src="img/modal_calc/balkon/type2.png" alt="форма остекления балкона">
+						</picture>
+					</div>
+					<div class="popup-calc__image fade tabs-block">
+						<picture>
+							<source srcset="img/modal_calc/balkon/type3.webp" type="image/webp">
+							<img src="img/modal_calc/balkon/type3.png" alt="форма остекления балкона">
+						</picture>
+					</div>
+					<div class="popup-calc__image fade tabs-block">
+						<picture>
+							<source srcset="img/modal_calc/balkon/type4.webp" type="image/webp">
+							<img src="img/modal_calc/balkon/type4.png" alt="форма остекления балкона">
+						</picture>
+					</div>
+				</div>
+				<div class="popup-calc__size">
+					<input data-input class="popup-calc__input" id="width" type="text" placeholder="Ширина" required>
+					<label for="width">мм</label>
+					<div class="popup-calc__multiplication"><strong>&times;</strong></div>
+					<input data-input class="popup-calc__input" id="height" type="text" placeholder="Высота" required>
+					<label for="height">мм</label>
+				</div>
+				<button class="popup-calc__btn btn" data-btn = "one">Далее</button>
 			</div>
-			<ul class="popup-calc__nav">
-				<li>
-					<a href="#" class="popup-calc__item tabs-item active">
-						<picture>
-							<source srcset="img/modal_calc/balkon/ba_01.webp" type="image/webp">
-							<img src="img/modal_calc/balkon/ba_01.png" loading="lazy" alt="">
-						</picture>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="popup-calc__item tabs-item">
-						<picture>
-							<source srcset="img/modal_calc/balkon/ba_02.webp" type="image/webp">
-							<img src="img/modal_calc/balkon/ba_02.png" loading="lazy" alt="">
-						</picture>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="popup-calc__item tabs-item">
-						<picture>
-							<source srcset="img/modal_calc/balkon/ba_03.webp" type="image/webp">
-							<img src="img/modal_calc/balkon/ba_03.png" loading="lazy" alt="">
-						</picture>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="popup-calc__item tabs-item">
-						<picture>
-							<source srcset="img/modal_calc/balkon/ba_04.webp" type="image/webp">
-							<img src="img/modal_calc/balkon/ba_04.png" loading="lazy" alt="">
-						</picture>
-					</a>
-				</li>
-			</ul>
-			<div class="popup-calc__wrapper">
-				<div class="popup-calc__image fade tabs-block active">
-					<picture>
-						<source srcset="img/modal_calc/balkon/type1.webp" type="image/webp">
-						<img src="img/modal_calc/balkon/type1.png" alt="форма остекления балкона">
-					</picture>
-				</div>
-				<div class="popup-calc__image fade tabs-block">
-					<picture>
-						<source srcset="img/modal_calc/balkon/type2.webp" type="image/webp">
-						<img src="img/modal_calc/balkon/type2.png" alt="форма остекления балкона">
-					</picture>
-				</div>
-				<div class="popup-calc__image fade tabs-block">
-					<picture>
-						<source srcset="img/modal_calc/balkon/type3.webp" type="image/webp">
-						<img src="img/modal_calc/balkon/type3.png" alt="форма остекления балкона">
-					</picture>
-				</div>
-				<div class="popup-calc__image fade tabs-block">
-					<picture>
-						<source srcset="img/modal_calc/balkon/type4.webp" type="image/webp">
-						<img src="img/modal_calc/balkon/type4.png" alt="форма остекления балкона">
-					</picture>
-				</div>
-			</div>
-			<div class="popup-calc__size">
-				<input data-input class="popup-calc__input" id="width" type="text" placeholder="Ширина" required>
-                <label for="width">мм</label>
-				<div class="popup-calc__multiplication"><strong>&times;</strong></div>
-				<input data-input class="popup-calc__input" id="height" type="text" placeholder="Высота" required>
-                <label for="height">мм</label>
-			</div>
-			<button class="popup-calc__btn btn" data-btn = "one">Далее</button>
 		</div>
 	</div>
-
 	<div class="popup-calc-profile" data-modal tabindex="-1">
-		<div class="popup-calc-profile__content" role="dialog">
-			<button class="popup-calc__close" aria-label="закрыть диалоговое окно">&times;</button>
-			<div class="popup-calc__title">Калькулятор</div>
-			<div class="popup-calc__subtitle">
-				Выберите тип остекления <br>и его профиль
+		<div class="popup-calc-profile__wrapper">
+			<div class="popup-calc-profile__content" role="dialog">
+				<button class="popup-calc__close" aria-label="закрыть диалоговое окно">&times;</button>
+				<div class="popup-calc__title">Калькулятор</div>
+				<div class="popup-calc__subtitle">
+					Выберите тип остекления <br>и его профиль
+				</div>
+				<select class="popup-calc-profile__control" name="view" id="view_type">
+					<option value="tree">Деревянное остекление</option>
+					<option value="aluminum">Алюминиевое остекление</option>
+					<option value="plastic">Остекление пластиковыми рамами</option>
+					<option value="french">Панорамное остекление</option>
+					<option value="overhang">Остекление с выносом</option>
+				</select>
+				<div class="popup-calc-profile__image">
+					<picture>
+						<source srcset="img/modal_calc/icon_cold.webp" type="image/webp">
+						<img src="img/modal_calc/icon_cold.png" loading="lazy" alt="снежинка">
+					</picture>
+				</div>
+				<div class="popup-calc-profile__item">
+					<input data-check class="popup-calc-profile__checkbox" id="cold" type="radio" name="checkbox-test">
+					<label for="cold" class="popup-calc-profile__label cold"><span>Холодное</span></label>
+				</div>
+				<div class="popup-calc-profile__image">
+					<picture>
+						<source srcset="img/modal_calc/icon_warm.webp" type="image/webp">
+						<img src="img/modal_calc/icon_warm.png" loading="lazy" alt="снежинка">
+					</picture>
+				</div>
+				<div class="popup-calc-profile__item">
+					<input data-check class="popup-calc-profile__checkbox" id="warm" type="radio" name="checkbox-test">
+					<label for="warm" class="popup-calc-profile__label warm"><span>Теплое</span></label>
+				</div>
+				<button class="popup-calc__btn btn" data-btn = "two">Далее</button>
 			</div>
-			<select class="popup-calc-profile__control" name="view" id="view_type">
-				<option value="tree">Деревянное остекление</option>
-				<option value="aluminum">Алюминиевое остекление</option>
-				<option value="plastic">Остекление пластиковыми рамами</option>
-				<option value="french">Панорамное остекление</option>
-				<option value="overhang">Остекление с выносом</option>
-			</select>
-			<div class="popup-calc-profile__image">
-				<picture>
-					<source srcset="img/modal_calc/icon_cold.webp" type="image/webp">
-					<img src="img/modal_calc/icon_cold.png" loading="lazy" alt="снежинка">
-				</picture>
-			</div>
-			<div class="popup-calc-profile__item">
-				<input data-check class="popup-calc-profile__checkbox" id="cold" type="radio" name="checkbox-test">
-				<label for="cold" class="popup-calc-profile__label cold"><span>Холодное</span></label>
-			</div>
-			<div class="popup-calc-profile__image">
-				<picture>
-					<source srcset="img/modal_calc/icon_warm.webp" type="image/webp">
-					<img src="img/modal_calc/icon_warm.png" loading="lazy" alt="снежинка">
-				</picture>
-			</div>
-			<div class="popup-calc-profile__item">
-				<input data-check class="popup-calc-profile__checkbox" id="warm" type="radio" name="checkbox-test">
-				<label for="warm" class="popup-calc-profile__label warm"><span>Теплое</span></label>
-			</div>
-			<button class="popup-calc__btn btn" data-btn = "two">Далее</button>
 		</div>
 	</div>
 	<div class="popup-form" data-modal tabindex="-1">
@@ -1022,8 +1027,9 @@
 			</form>	
 		</div>
 	</div>
-	<script src="resources/focus-visible.min.js"></script>
-	<script src="js/script.min.js"></script>
+
+	<script async src="resources/focus-visible.min.js"></script>
+	<script async src="js/script.min.js"></script>
 </body>
 
 </html>
